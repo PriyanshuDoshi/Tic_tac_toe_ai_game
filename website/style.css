@@ -1,0 +1,113 @@
+/* Style for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #32323244; /* BG_COLOR */
+    color: rgb(59, 21, 49);
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the game container */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Style for the game board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 5px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff; /* LINE_COLOR */
+}
+
+/* Style for each cell */
+.cell {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* BG_COLOR */
+    font-size: 4rem;
+    cursor: pointer;
+    border: 1px solid rgb(255, 251, 0);
+    color: rgb(10, 228, 32);
+}
+
+/* Style for the buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2c2626;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Custom Pop-up Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #12e431;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #0e0000;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    font-family:Andale Mono, monospace;
+}
+
+.close-btn {
+    color: #fe0707;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Align input text in the pop-up box */
+#popup-input {
+    width: 80%; /* Adjust as needed */
+    padding: 10px;
+    margin: 10px auto; /* Center horizontally */
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #000000;
+    color: #12e431;
+}
+
